@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <title>Balance Your Chakras</title>
 </head>
@@ -15,52 +16,64 @@
     </div>
     <div class="container text-center">
         <div class="row">
-            <div class="col-6">
-                <div class="row">
-                    <div class="col-12 py-2">
-                        <p id="currentScore">Current Score: </p>
+            <div class="col-12">
+                <h4 class="text-center my-3">Click the crystals until you find balance<br> between Your Score and the Perfect Score</h4>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-sm-3 col-xs-12 text-center">
+                <button class="btn btn-light" id="crystalOne">
+                    <img src="assets/img/crystal1.png" class="img-fluid" alt="Crystal 1">
+                </button>
+            </div>
+            <div class="col-sm-3 col-xs-12 text-center">
+                <button class="btn btn-light" id="crystalTwo">
+                    <img src="assets/img/crystal2.png" class="img-fluid" alt="Crystal 2">
+                </button>
+            </div>
+            <div class="col-sm-3 col-xs-12 text-center">
+                <button class="btn btn-light" id="crystalThree">
+                    <img src="assets/img/crystal3.png" class="img-fluid" alt="Crystal 3">
+                </button>
+            </div>
+            <div class="col-sm-3 col-xs-12 text-center">
+                <button class="btn btn-light" id="crystalFour">
+                    <img src="assets/img/crystal4.png" class="img-fluid" alt="Crystal 4">
+                </button>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="row py-3">
+            <div class="col-md-6 col-xs-12">
+                <div class="row border m-1 bg-light">
+                    <div class="col-12 py-3">
+                        <h4 id="currentScore">Current Score: </h4>
                     </div>
-                    <div class="col-12 py-2">
-                        <p id="perfectScore">Perfect Score: </p>
+                </div>
+                <div class="row border m-1 bg-info text-light">
+                    <div class="col-12 py-3">
+                        <h4 id="perfectScore">Perfect Score: </h4>
                     </div>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="row">
-                    <div class="col-12 py-2">
-                        <p id="totalWins">Total Wins: </p>
+            <div class="col-md-6 col-xs-12">
+                <div class="row border m-1">
+                    <div class="col-12 py-3 bg-success text-light">
+                        <h4 id="totalWins">Total Wins: </h4>
                     </div>
-                    <div class="col-12 py-2">
-                        <p id="totalLosses">Total Losses: </p>
+                </div>
+                <div class="row border m-1 bg-danger text-light">
+                    <div class="col-12 py-3">
+                        <h4 id="totalLosses">Total Losses: </h4>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row my-3">
-            <div class="col-3 text-center">
-                <button id="crystalOne">
-                    <img src="assets/img/crystal1.jpg" alt="Crystal 1">
-                </button>
-            </div>
-            <div class="col-3 text-center">
-                <button id="crystalTwo">
-                    <img src="assets/img/crystal2.jpg" alt="Crystal 2">
-                </button>
-            </div>
-            <div class="col-3 text-center">
-                <button id="crystalThree">
-                    <img src="assets/img/crystal3.jpg" alt="Crystal 3">
-                </button>
-            </div>
-            <div class="col-3 text-center">
-                <button id="crystalFour">
-                    <img src="assets/img/crystal4.jpg" alt="Crystal 4">
-                </button>
-            </div>
-        </div>
+        <hr>
     </div>
-
-
+    
+    
     <!-- jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
